@@ -3,3 +3,56 @@ Bit: En enskild binär siffra (0 eller 1).
 Byte: En grupp av 8 bitar. Exempel: 10101010.
 MSB (Most Significant Bit): Den bit med högst värdeposition (längst till vänster).
 LSB (Least Significant Bit): Den bit med lägst värdeposition (längst till höger).
+
+FRÅGOR
+Datatyper
+Vad är skillnaden mellan primitiva datatyper och komplexa datatyper i programmering?
+Primitiva datatyper är de grundläggande datatyperna som tillhandahålls direkt av språkets syntax. De inkluderar heltal (int), flyttal (float), tecken (char), och boolean (bool). Dessa typer är oftast implementerade som en enkel och effektiv representation i minnet.
+Komplexa datatyper eller sammansatta datatyper består av en eller flera primitiva datatyper. De kan inkludera strukturer (struct), klasser (class), och listor (list). Dessa typer kan ha olika egenskaper och metoder, och används för att gruppera data och definiera mer avancerade datastrukturer.
+Hur representeras olika datatyper i minnet?
+Heltal lagras oftast som en sekvens av binära siffror som representerar värdet. Till exempel lagras ett 32-bitars heltal som 4 bytes i minnet.
+Tecken lagras oftast med en standardkodning som ASCII eller UTF-8, där varje tecken är representerat av en specifik byte-sekvens.
+
+
+
+
+
+Vad är en typkonvertering och hur hanteras det i olika programmeringsspråk?
+Typkonvertering är processen att omvandla en variabel från en datatyp till en annan.
+Implicit konvertering sker automatiskt, exempelvis när en int läggs till en float och resultatet blir en float.
+Explicit konvertering kräver att programmeraren utför en konvertering med ett specifikt kommando eller metod, t.ex. static_cast i C++ eller Convert.ToInt32 i C#.
+Vad är skillnaden mellan statiskt och dynamiskt typade språk?
+Statiskt typade språk (t.ex. C, C++, Java) kräver att datatyper deklareras och är kända vid kompileringstid. Detta kan leda till snabbare exekvering och färre fel vid körning, men kan vara mindre flexibel.
+Dynamiskt typade språk (t.ex. Python, JavaScript) tillåter att datatyper bestäms vid körningstid. Detta ger mer flexibilitet men kan leda till typrelaterade fel vid körning.
+Hur fungerar type safety i programmeringsspråk och varför är det viktigt?
+Type safety säkerställer att variabler används i enlighet med deras datatyper. Det förhindrar att en variabel av en viss typ används som en annan typ, vilket kan orsaka fel och krascher. Type safety bidrar till kodens robusthet och pålitlighet, vilket minskar risken för bugs och oväntade beteenden.
+
+
+
+
+
+
+Input, Output, Processing och Storage
+Hur fungerar avkodning och kodning av data vid in- och utmatning?
+Kodning är processen att omvandla data till ett format som kan överföras eller lagras. Till exempel, text kan kodas till bytes med olika kodningar som UTF-8.
+Avkodning är processen att omvandla kodad data tillbaka till sitt ursprungliga format. Detta är nödvändigt för att korrekt återställa och använda den ursprungliga informationen.
+Vilka olika typer av datainmatningsenheter finns och hur fungerar de?
+Tangentbord skickar teckenkoder till datorn när tangenter trycks ner.
+Mus registrerar rörelser och klick genom sensorer och skickar dessa till datorn.
+Skannrar använder ljuskänsliga sensorer för att konvertera fysiska dokument till digitala bilder.
+Vad är skillnaden mellan sekventiell och parallell bearbetning av data?
+Sekventiell bearbetning innebär att data bearbetas en i taget i en specifik ordning, vilket kan vara enkelt men långsamt för stora uppgifter.
+Parallell bearbetning innebär att flera uppgifter bearbetas samtidigt, vilket kan öka hastigheten och effektiviteten vid bearbetning av stora datamängder.
+Hur fungerar cache-minne och hur påverkar det prestanda?
+Cache-minne är ett snabbt, temporärt lagringsutrymme som används för att lagra ofta åtkomna data. Genom att hålla dessa data nära processorn kan det minska åtkomsttiden och förbättra prestanda. Cache-minne är ofta organiserat i nivåer (L1, L2, L3) för att optimera hastighet och kapacitet.
+
+
+
+
+
+Vad är RAID-konfigurationer och hur påverkar de lagring?
+RAID (Redundant Array of Independent Disks) är en teknik som använder flera hårddiskar för att förbättra prestanda och säkerhet. Exempel inkluderar:
+RAID 0 (striping): Ökar hastigheten genom att dela upp data över flera diskar men erbjuder ingen redundans.
+RAID 1 (mirroring): Speglar data över två eller flera diskar för att ge redundans.
+RAID 5 (striping med paritet): Erbjuder en balans mellan prestanda och redundans genom att använda paritetsdata för att återskapa data vid en diskfel.
+
