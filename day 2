@@ -1,0 +1,5 @@
+Viktiga Begrepp
+Bit: En enskild binär siffra (0 eller 1).
+Byte: En grupp av 8 bitar. Exempel: 10101010.
+MSB (Most Significant Bit): Den bit med högst värdeposition (längst till vänster).
+LSB (Least Significant Bit): Den bit med lägst värdeposition (längst till höger).
